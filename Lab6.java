@@ -19,29 +19,29 @@ public class Lab6 {
 		// when 1st letter is vowel
 		if (tobeTranslated.startsWith("a") || tobeTranslated.startsWith("e") || tobeTranslated.startsWith("i")
 				|| tobeTranslated.startsWith("o") || tobeTranslated.startsWith("u")) {
-			System.out.println(tobeTranslated.toLowerCase() + "way");
+			System.out.println(tobeTranslated + "way");
 		}
 		// when 2nd letter is vowel
 		else {
 
 			if (result1.startsWith("a") || result1.startsWith("e") || result1.startsWith("i") || result1.startsWith("o")
 					|| result1.startsWith("u"))
-				System.out.println(result1.toLowerCase() + "ay");
+				System.out.println(result1 + "ay");
 
 			else {
 				if (result2.startsWith("a") || result2.startsWith("e") || result2.startsWith("i")
 						|| result2.startsWith("o") || result2.startsWith("u"))
-					System.out.println(result2.toLowerCase() + "ay");
+					System.out.println(result2 + "ay");
 
 				else {
 					if (result3.startsWith("a") || result3.startsWith("e") || result3.startsWith("i")
 							|| result3.startsWith("o") || result3.startsWith("u"))
-						System.out.println(result3.toLowerCase() + "ay");
+						System.out.println(result3 + "ay");
 
 					else {
 						if (result4.startsWith("a") || result4.startsWith("e") || result4.startsWith("i")
 								|| result4.startsWith("o") || result4.startsWith("u"))
-							System.out.println(result4.toLowerCase() + "ay");
+							System.out.println(result4 + "ay");
 					}
 
 				}
@@ -50,8 +50,8 @@ public class Lab6 {
 	}
 
 	public static String result(String tobeTranslated) {
-		String answer1 = tobeTranslated.substring(1, tobeTranslated.length());
-		String x = tobeTranslated.substring(0, 1);
+		String answer1 = tobeTranslated.toLowerCase().substring(1, tobeTranslated.length());
+		String x = tobeTranslated.toLowerCase().substring(0, 1);
 		return answer1 + x;
 
 	}
