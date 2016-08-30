@@ -51,8 +51,13 @@ public class Lab6 {
 
 	public static String result(String tobeTranslated) {
 		String answer1 = tobeTranslated.toLowerCase().substring(1, tobeTranslated.length());
+<<<<<<< HEAD
 		String begWord = tobeTranslated.toLowerCase().substring(0, 1);
 		return answer1 + begWord;
+=======
+		String x = tobeTranslated.toLowerCase().substring(0, 1);
+		return answer1 + x;
+>>>>>>> 5bb9a93435ee8ee58188bb442c6fa556074617bc
 
 	}
 
