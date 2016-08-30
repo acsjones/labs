@@ -50,9 +50,9 @@ public class Lab6 {
 	}
 
 	public static String result(String tobeTranslated) {
-		String answer1 = tobeTranslated.substring(1, tobeTranslated.length());
-		String x = tobeTranslated.substring(0, 1);
-		return answer1 + x;
+		String answer1 = tobeTranslated.toLowerCase().substring(1, tobeTranslated.length());
+		String begWord = tobeTranslated.toLowerCase().substring(0, 1);
+		return answer1 + begWord;
 
 	}
 
