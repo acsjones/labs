@@ -21,7 +21,6 @@ public class RoshamboApp {
 		String choice = sc.next();
 		System.out.println();
 		// get program to accept any case of "rock" or "random"
-		// get program to prompt in case of invalid input
 		Player opponent;
 		switch (choice) {
 		case "random":
@@ -37,7 +36,7 @@ public class RoshamboApp {
 		}
 
 		while (nextround.equalsIgnoreCase("y") || nextround.equalsIgnoreCase("yes")) {
-			System.out.print("Rock, paper, or scissors? (R/P/S) : ");
+		
 			Player player = new PlayerGet("");
 			Roshambo play = player.generateRoshambo();
 			Roshambo oplay = opponent.generateRoshambo();
