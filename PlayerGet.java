@@ -2,14 +2,11 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PlayerGet extends Player {
-	
 
 	public PlayerGet(String playerName) {
 		super(playerName);
 
 	}
-
-
 
 	@Override
 	public Roshambo generateRoshambo() {
@@ -33,15 +30,10 @@ public class PlayerGet extends Player {
 			case 's':
 				return Roshambo.SCISSORS;
 			}
-			
 
 		}
-		else  {
-	System.out.println("You did not give a valid input. Please try again. :");
-	
 
-}
-		return generateRoshambo();
+		return null;
 
 	}
 	
