@@ -34,7 +34,6 @@ public class RoshamboApp {
 		}
 
 		while (nextround.equalsIgnoreCase("y") || nextround.equalsIgnoreCase("yes")) {
-		
 			Player player = new PlayerGet("");
 			Roshambo play = player.generateRoshambo();
 			Roshambo oplay = opponent.generateRoshambo();
@@ -80,14 +79,16 @@ public class RoshamboApp {
 		if (nextround.equalsIgnoreCase("n") || nextround.equalsIgnoreCase("no")) {
 			if (youwin >= 1) {
 				System.out.println("Bye, " + userName + "! You won " + youwin + " out of " + totalgames + " games! :)");
+				sc.close();
 			}
 			if (youwin == 0 && youlose >= 1) {
 				System.out.println(
 						"Tough luck, " + userName + ". You lost " + youlose + " out of " + totalgames + " games. :(");
+				sc.close();
 			}
 			if (youdraw >= 1 && youwin == 0 && youlose == 0) {
 				System.out.println("Whoa..! All " + youdraw + " out of " + totalgames + " games were ties!");
-				sc.close();
+				sc.close(); 
 			}
 		}
 	}

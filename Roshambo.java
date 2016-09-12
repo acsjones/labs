@@ -4,8 +4,6 @@ ROCK,
 PAPER,
 SCISSORS;
 	
-
-
 	@Override
 	public String toString(){
 	if (this.ordinal() == 0) return "Rock";
