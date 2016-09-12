@@ -18,10 +18,11 @@ public class RoshamboApp {
 		String userName = sc.nextLine();
 		System.out.println();
 		System.out.print("Would you like to play against rock or random? ");
+		Player opponent = null;
+		while (opponent == null) {
+			System.out.println("You must play with either rock or random.");	
 		String choice = sc.next();
-		System.out.println();
-		// get program to accept any case of "rock" or "random"
-		Player opponent;
+		System.out.println();	
 		switch (choice) {
 		case "random":
 			opponent = new RandomPlayer("Miss Random");
@@ -29,10 +30,7 @@ public class RoshamboApp {
 		case "rock":
 			opponent = new RockPlayer("Mister Rock");
 			break;
-		default:
-			sc.close();
-			throw new IllegalArgumentException("Wrong.");
-
+		}
 		}
 
 		while (nextround.equalsIgnoreCase("y") || nextround.equalsIgnoreCase("yes")) {
@@ -88,7 +86,7 @@ public class RoshamboApp {
 						"Tough luck, " + userName + ". You lost " + youlose + " out of " + totalgames + " games. :(");
 			}
 			if (youdraw >= 1 && youwin == 0 && youlose == 0) {
-				System.out.println("All " + youdraw + " out of " + totalgames + " games were ties!");
+				System.out.println("Whoa..! All " + youdraw + " out of " + totalgames + " games were ties!");
 				sc.close();
 			}
 		}
