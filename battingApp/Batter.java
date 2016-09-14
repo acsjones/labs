@@ -73,16 +73,18 @@ public class Batter {
 		for (int i = 0; i < atBat.size(); i++) {
 			System.out.println(atBat.get(i));
 		}
-	System.out.println("Result for at-bat 0: ");
-	atBat.add(input.nextInt());
-	//int inputAtbat = Validator.getValInt(input, "Result for at-bat 0: ", -1, 5);
-	//while (inputAtbat > -1 && inputAtbat < 5) {  //((I'm trying to validate but,
-	//		atBat.add(inputAtbat);                    //   it breaks my program ))
-	atBatCount++;
+	//System.out.println("Result for at-bat 0: ");
+	// atBat.add(input.nextInt());
+	int inputAtbat = Validator.getInt(input, "Result for at-bat 0: ");
+	                                   
+	atBat.add(inputAtbat);           //((I'm trying to validate but,
+	atBatCount++;      //   it breaks my program ))
 		String moreAtbat = Validator.yesOrNo(input, "Another at-bat? (Y/N)");
 		while (moreAtbat.equalsIgnoreCase("y")) {
-			System.out.println("Result for at-bat " + atBat.size() + ": ");
-			atBat.add(input.nextInt());
+		//System.out.println("Result for at-bat " + atBat.size() + ": ");
+		//	atBat.add(input.nextInt());
+			inputAtbat = Validator.getInt(input, "Result for at-bat " + atBat.size() + ": ");
+			atBat.add(inputAtbat);
 			atBatCount++;
 			moreAtbat = Validator.yesOrNo(input, "Another at-bat? (Y/N)");
 			
@@ -90,5 +92,6 @@ public class Batter {
 		}
 		if (moreAtbat.equalsIgnoreCase("n")) {
 		}
-	}
+	
+}
 }

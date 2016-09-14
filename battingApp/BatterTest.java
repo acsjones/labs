@@ -7,8 +7,12 @@ import org.junit.Test;
 public class BatterTest {
 	
 	@Test
-	public void whenBaseEarnedIs0_1ExpectedBattingAverageIs_333() {
+	public void whenBaseEarnedIs0_1ExpectedBattingAverageIs_500() {
 	Batter b = new Batter(null);
-	assertEquals("0.333",b.getFormattedBatAvg());
+	assertEquals("0.500",b.getFormattedBatAvg());
 	}
+	
+	
+	
+	
 }
