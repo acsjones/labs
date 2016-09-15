@@ -6,7 +6,6 @@ public class Lab1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scanner = new Scanner(System.in);
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Welcome to the Grand Circus' Room Detail Generator!");
 		String choice = "y";
@@ -15,10 +14,10 @@ public class Lab1 {
 		System.out.println();
 		
 		System.out.println("Please enter the width.");
-		double width = scanner.nextDouble();
+		double width = sc.nextDouble();
 		
 		System.out.println("Please enter the length.");
-		double length = scanner.nextDouble();
+		double length = sc.nextDouble();
 		
 		double area = width * length;
 		
@@ -32,14 +31,17 @@ public class Lab1 {
 		
 		System.out.print("Would you like to measure another room? Y/N");
 		
-		choice = sc.nextLine();
-		System.out.println();
+		
+		choice = sc.next();
+		
 		
 		}
+		while (choice.equalsIgnoreCase("n"))  {
+			System.out.println("Goodbye.");	
 		sc.close();
-		System.out.println("See ya.");
+		break;
 	
-			
+		}
 		}
 			
 

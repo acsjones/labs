@@ -87,7 +87,7 @@ public class RoshamboApp {
 				sc.close();
 			}
 			if (youdraw >= 1 && youwin == 0 && youlose == 0) {
-				System.out.println("Whoa..! All " + youdraw + " out of " + totalgames + " games were ties!");
+				System.out.println("Whoa..! All " + youdraw + " out of " + totalgames + " games were ties! See ya!");
 				sc.close(); 
 			}
 		}

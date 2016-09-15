@@ -1,7 +1,5 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Scanner;
-import java.util.TreeSet;
 
 public class MovieApp3 {
 
@@ -12,9 +10,9 @@ public class MovieApp3 {
         System.out.println();
  
         Scanner sc = new Scanner(System.in);
-        String name = null;
-        String category = null;
-        Movie movies = new Movie(name,category);
+       // String name = null;
+    //    String category = null;
+    //    Movie movies = new Movie(name,category);
         ArrayList<Movie> movieList = new ArrayList<Movie>();
         movieList.add(new Movie("Nightmare on Elm Street", "horror"));
         movieList.add(new Movie("Bride of Chucky", "horror"));
@@ -26,18 +24,19 @@ public class MovieApp3 {
         movieList.add(new Movie("Star Wars", "scifi"));
         movieList.add(new Movie("Avatar", "scifi"));
         movieList.add(new Movie("Lucy", "scifi"));
-    
+
         System.out.println("There are " + movieList.size() +" movies in the list");
         System.out.println("Which genre are you interested in? (animated, horror, action, scifi):");
         String personMovieCategory = sc.next();
       for (Movie movie : movieList){
     	  if(personMovieCategory.equalsIgnoreCase(movie.getCategory())){
-    		  System.out.println(movie.getName());
-    	  }}
+    		  System.out.println(movie);
+    	  }
+      }
       
      
       
-        
+        sc.close();
        }
 	
 	

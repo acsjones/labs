@@ -32,7 +32,7 @@ public class Lab5 {
 			choice = sc.next();
 
 		}
-
+		sc.close();
 	}
 
 	public static int roll(int number) {

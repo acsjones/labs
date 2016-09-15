@@ -19,7 +19,7 @@ public class Lab6 {
 		// when 1st letter is vowel
 		if (tobeTranslated.startsWith("a") || tobeTranslated.startsWith("e") || tobeTranslated.startsWith("i")
 				|| tobeTranslated.startsWith("o") || tobeTranslated.startsWith("u")) {
-			System.out.println(tobeTranslated + "way");
+			System.out.println(tobeTranslated.toLowerCase() + "way");
 		}
 		// when 2nd letter is vowel
 		else {
@@ -47,6 +47,7 @@ public class Lab6 {
 				}
 			}
 		}
+		sc.close();
 	}
 
 	public static String result(String tobeTranslated) {

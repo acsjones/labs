@@ -30,6 +30,8 @@ public class Lab7 {
 				}
 				if (studentNumber > 0 && studentNumber < 6) {
 
+					
+					
 					System.out.println("Student " + studentNumber + " is " + name[studentNumber]
 							+ ". What would you like to know about " + name[studentNumber]
 							+ "? (Enter 'hometown' or 'food').");
