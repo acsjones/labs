@@ -1,8 +1,10 @@
 package countriesApp;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
@@ -64,7 +66,7 @@ public class CountriesTextFile {
 				Files.createFile(filePath);
 			}
 			File file = filePath.toFile();
-			PrintWriter writer = new PrintWriter(file);
+			PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(file, true)));
 			
 			for (String country : countryList) {
 				writer.println(country);

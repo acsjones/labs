@@ -40,7 +40,8 @@ public class CountriesApp {
 		CountriesTextFile addCountry = new CountriesTextFile();
 		inputCountry1.add(input.next());
 		boolean country = addCountry.saveCountryList(inputCountry1);
-			//it wont append to file, but i finally got it to print to file!!!!
+			//I finally got it to append to file! It took a while, but I plan on 
+			//going back to add the validator class and other build specifications.
 		 }
 	
   	  
