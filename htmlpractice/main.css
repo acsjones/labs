@@ -1,0 +1,100 @@
+	body {
+		background-image: url("bg.jpg");
+		background-attachment: fixed;
+		font-family: "Impact";
+}
+
+a:link, a:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   
+}
+
+a:hover, a:active {
+    color: #61374b;
+
+}
+
+footer {
+    padding: 0em;
+    color: white;
+    background-color: #61374b;
+    clear: left;
+    text-align: center;
+    opacity: 0.75;
+}
+
+
+h1 {
+		font-size: 25px;
+		text-align: center;
+   		color: black;
+}
+ul#navi {
+    list-style-type: overflow:hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 10px;
+ 		padding-right: 20px;
+  		padding-bottom: 20px;
+  		padding-left: 20px;
+  		font-size: 20px;
+  		font-family: "Impact";
+    	position: center;
+
+}
+li {
+    float: right;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    display: inline-block;
+   
+}
+
+
+
+div.menu {
+  		padding-top: 40px;
+ 		padding-right: 40px;
+  		padding-bottom: 40px;
+  		padding-left: 40px;
+  		font-size: 20px;
+  		font-family: "Impact";
+   		background-color: white;
+   		opacity: 0.8;
+    	position: relative;
+ }
+ 
+ 
+ 
+
+ 
+div.img {
+    margin: 5px;
+    border: 1px solid purple;
+    float: left;
+    width: 180px;
+    opacity: 0.5;
+}
+div.img:hover {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    opacity: 1;
+}
+
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
